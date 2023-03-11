@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  list-style: none;
+  font-family: 'Roboto';
+  color: whitesmoke;
+  text-decoration: none;
+  position: static;
+}
+
+@-webkit-keyframes Animationbg {
+  0% {
+    background-position: 84% 0%
+  }
+  50% {
+    background-position: 17% 100%
+  }
+  100% {
+    background-position: 84% 0%
+  }
+}
+
+@keyframes Animationbg {
+  0% {
+    background-position: 84% 0%
+  }
+  50% {
+    background-position: 17% 100%
+  }
+  100% {
+    background-position: 84% 0%
+  }
+}
+
+body {
+  max-width: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(42deg, #9d46d7, #3fb5ec, #19c8ba);
+  background-size: 600% 600%;
+  -webkit-animation: Animationbg 7s ease infinite;
+  animation: Animationbg 7s ease infinite;
+}
+
+.bayan {
+  margin: 0 5vw;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 110%;
+}
+
+.bayan-header {
+  margin-bottom: 2vh;
+}
+
+.bayan-list {
+  padding: 0;
+  margin: 0;
+}
+
+.bayan-list-item {
+  margin-bottom: 3%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bayan-list-item-description-text, .shadowBox {
+
+}
+
+.bayan-list-item-description .wrapper img {
+  width: 8%;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(42deg) brightness(106%) contrast(105%);
+  -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+
+.bayan-list-item-img {
+  width: 0%;
+  height: 0%;
+}
+
+:target > .bayan-list-item-description a .bayan-list-item-img {
+  width: 60%;
+  height: 60%;
+  -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+
+:target > .bayan-list-item-description .wrapper img {
+  transform: rotate(45deg);
+  -webkit-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+}
+
+.shadowBox {
+  display: none;
+}
+
+:target > .bayan-list-item-description .bayan-list-item-description-text {
+  display: none;
+}
+
+:target > .bayan-list-item-description .shadowBox {
+  display: flex;
+  flex-direction: column;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
