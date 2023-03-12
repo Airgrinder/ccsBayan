@@ -80,6 +80,7 @@ body {
 .bayan-list-item-img {
   width: 0%;
   height: 0%;
+  align-self: center;
 }
 
 :target > .bayan-list-item-description a .bayan-list-item-img {
