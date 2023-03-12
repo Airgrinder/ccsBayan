@@ -144,3 +144,40 @@ body {
   }
 
 }
+
+@media (min-width: 1920px) {
+
+  .plus {
+    opacity: 0;
+  }
+
+  .bayan {
+    font-size: 160%;
+  }
+
+  .bayan-header {
+    margin-bottom: 3%;
+  }
+
+  .bayan:hover > .bayan-list h4 {
+    color: peachpuff;
+  }
+  
+  .bayan:hover > .bayan-list .plus {
+    opacity: 1;
+  }
+
+  :target > .bayan-list-item-description a .bayan-list-item-img {
+    width: 35%;
+    height: 35%;
+  }
+
+  .bayan-list-item {
+    margin: 0 0 2% 0;
+  }
+
+  .bayan-list-item-description .wrapper img {
+    width: 2%;
+  }
+
+}
