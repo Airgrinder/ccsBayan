@@ -178,4 +178,21 @@ body {
     width: 2%;
   }
 
+  .bayan-list-item-img {
+    display: flex;
+    align-self: center;
+  }
+
+  .bayan-list-item-description-text {
+    display: flex;
+  }
+
+  .bayan-list-item-description-text:hover > .bayan-list-item-img {
+    width: 35%;
+    height: 35%;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+    display: flex;
+  }
+
 }
